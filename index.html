@@ -7,11 +7,22 @@
     <head> 
         <!-- meta name is used for scaling on different devices -->
         <meta charset="UTF-8">
-        <title> Potpurri</title>
+        <title> Potpourri</title>
+        <script src="potpourri.js"></script>
         </head>
     
     <body>
         <h1> Potpourri - Stephanie Quick</h1>
-        <h2> Version 1 </h2>    
+        <h2> Version 1.4 </h2>    
+
+        <button type="button" onclick="RollSixSidedDice()">Roll Dice</button><br><br>
+        Six Sided Dice: <input id="dice" type="text" value="" size="5" disabled><br><br>
+        
+        X: <input id="xID" type="text" value="1" size="5"><br>
+        Y: <input id="yID" type="text" value="1" size="5"><br>
+        <button type="button" onclick="DoCalculations()">Do Calculations</button><br><br>
+
+        Math Results:<p id="mathResultsID"></p>
+
     </body>
 </html>
